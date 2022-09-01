@@ -57,6 +57,7 @@ const CarContextFire = ({ children }) => {
     };
 
     const getOneCar = async (id) => {
+        console.log(id);
         try {
             let data = await getDocs(collection(db, "cars"));
             let carDet = {};

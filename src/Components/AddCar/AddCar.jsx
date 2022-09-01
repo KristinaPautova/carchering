@@ -122,10 +122,10 @@ const AddCar = () => {
                                 label="Двигатель"
                                 onChange={(e) => setEngine(e.target.value)}
                             >
-                                <MenuItem value={'petrol'}>Бензиновый</MenuItem>
-                                <MenuItem value={'hybrid'}>Гибридные</MenuItem>
-                                <MenuItem value={'electrical'}>Электрические</MenuItem>
-                                <MenuItem value={'diesel'}>Дизельный</MenuItem>
+                                <MenuItem value={'Бензин'}>Бензин</MenuItem>
+                                <MenuItem value={'Гибрид'}>Гибрид</MenuItem>
+                                <MenuItem value={'Электрический'}>Электрический</MenuItem>
+                                <MenuItem value={'Дизель'}>Дизель</MenuItem>
                             </Select>
                         </FormControl>
                         <FormControl fullWidth sx={{ width: 300 }}>
@@ -156,9 +156,9 @@ const AddCar = () => {
                                 label="Привод"
                                 onChange={(e) => setDriveUnit(e.target.value)}
                             >
-                                <MenuItem value={'front'}>Передний</MenuItem>
-                                <MenuItem value={'rear'}>Задний</MenuItem>
-                                <MenuItem value={'full'}>Полный</MenuItem>
+                                <MenuItem value={'Передний'}>Передний</MenuItem>
+                                <MenuItem value={'Задний'}>Задний</MenuItem>
+                                <MenuItem value={'Полный'}>Полный</MenuItem>
                             </Select>
                         </FormControl>
                     </div>

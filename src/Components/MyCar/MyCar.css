@@ -19,7 +19,19 @@
 }
 
 .bac_i{
-    background-image: url("https://i.pinimg.com/564x/1b/3e/d3/1b3ed33d0ccfe27f4891957d0ad06c18.jpg");
+    background-image: url("https://w-dog.ru/wallpapers/1/15/397571781191084/malenkaya-figurka-raritetnoj-mashinki.jpg");
     background-size: cover;
     padding-bottom: 20px;
+}
+
+@media all and (max-width: 500px) {
+
+    .my_Car__top > img{
+        width: 300px;
+    }
+
+    .container1{
+        width: 100%;
+    }
+
 }

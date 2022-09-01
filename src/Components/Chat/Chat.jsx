@@ -11,6 +11,7 @@ import './Chat.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import ImageList from "@mui/material/ImageList";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 
 const Chat = () => {
@@ -39,7 +40,8 @@ const Chat = () => {
         let obj = {
             comment,
             data: str ,
-            user: user.email
+            user: user.email,
+            like: 0
         }
 
         addComment(obj);
@@ -58,6 +60,12 @@ const Chat = () => {
         }
         editProduct(id,chat)
         setMainBlock(false)
+    }
+    function clickLike(id,one){
+        let likes = {
+            like: ++one
+        }
+        editProduct(id,likes)
     }
 
     useEffect(() => {
@@ -86,6 +94,10 @@ const Chat = () => {
                                 </div>
                                 <Typography variant="h6" component="div">
                                     {elem.user}
+                                    <div>
+                                        <span>Лайки: {elem.like}</span>
+                                        <Button onClick={() => clickLike(elem.id, elem.like)}><ThumbUpIcon/></Button>
+                                    </div>
                                 </Typography>
                                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
                                     {elem.comment}

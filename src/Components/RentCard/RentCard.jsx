@@ -12,19 +12,22 @@ import {cartContext} from "../../context/CartContextProvider";
 import {Checkbox} from "@mui/material";
 import {FavoriteBorder} from "@mui/icons-material";
 import {favoritesContext} from "../../context/FavoritesContextProvider";
+import {Link} from "react-router-dom";
 
 export default function RentCard({cars}) {
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
     const { addProductCart } = useContext(cartContext);
     const {addProductFavorites} = useContext(favoritesContext);
     return (
-                <ImageListItem sx={{ width: 300, height: 250 }}> >
-                    <img style={{borderRadius: '15px' , height:'300px'}}
+                <ImageListItem sx={{ width: 280, height: 270 }}>
+                    <Link to={`/rentDetails/${cars.id} `}>
+                    <img style={{borderRadius: '15px' , height:'300px', width: '280px'}}
                         src={`${cars.img[0]}?w=248&fit=crop&auto=format`}
                         srcSet={`${cars.img[0]}?w=248&fit=crop&auto=format&dpr=2 2x`}
                         alt={cars.model}
                         loading="lazy"
                     />
+                    </Link>
                     <ImageListItemBar
                         style={{borderRadius: '15px'}}
                         title={`${cars.model},${cars.yearOfIssue}`}

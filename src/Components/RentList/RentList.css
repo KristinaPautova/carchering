@@ -44,7 +44,7 @@
         display: flex;
     }
     .search__box__bac {
-        background-color: white;
+        /*background-color: none;*/
     }
 }
 

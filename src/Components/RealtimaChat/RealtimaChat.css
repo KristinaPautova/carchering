@@ -21,3 +21,10 @@
     80%{color: yellow;}
 }
 
+@media all and (max-width: 500px) {
+
+    .us-text{
+        font-size: 20px;
+    }
+
+}

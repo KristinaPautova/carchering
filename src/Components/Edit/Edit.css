@@ -1,0 +1,8 @@
+.editProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    margin: 100px 0;
+}
+

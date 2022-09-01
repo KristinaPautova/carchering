@@ -49,7 +49,7 @@ const RentList = () => {
     },[carsArr])
 
 
-    let limitPage =9;
+    let limitPage =4;
     let pageVisit = limitPage * currentPage;
     let countPage = Math.ceil(carsArr.length / limitPage)
 

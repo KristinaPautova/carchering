@@ -14,6 +14,8 @@ import Favorites from "./Components/Favorites/Favorites";
 import RealtimeChat from "./Components/RealtimaChat/RealtimaChat";
 import ChatSuccess from "./Components/Chat/ChatSuccess";
 import Rented from "./Components/Rented/Rented";
+import RentDetails from "./Components/RentDetails/RentDetails";
+import Edit from "./Components/Edit/Edit"
 
 const MainRouts = () => {
     return (
@@ -32,6 +34,9 @@ const MainRouts = () => {
             <Route path='/realtime' element={<RealtimeChat/>}/>
             <Route path='/chatSuccess' element={<ChatSuccess/>}/>
             <Route path='/rented' element={<Rented/>}/>
+                <Route path='/rentDetails/:id' element={<RentDetails/>}/>
+            <Route path='/edit/:id' element={<Edit/>}/>
+
         </Routes>
     );
 };

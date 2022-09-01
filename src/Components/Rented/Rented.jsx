@@ -36,7 +36,7 @@ const Rented = () => {
                 item.owner === user.email && (
                     <div key={item.id} style={{marginTop:"80px", marginBottom:'50px', minHeight: '500px'}}  className='card'>
                         <Card sx={{ maxWidth: 300 }}>
-                            <Link to={`/nftDetails/${item.id}`}>
+                            <Link to={`/rentDetails/${item.id}`}>
                                 <CardMedia
                                     component="img"
                                     alt="green iguana"
