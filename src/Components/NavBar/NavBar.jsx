@@ -107,9 +107,9 @@ const NavBar = () => {
                                 </Link>
                             </MenuItem>
                             {/*{ user && (*/}
-                                <MenuItem  key="MarketPlae" onClick={handleCloseNavMenu}>
+                                <MenuItem  key="/rent" onClick={handleCloseNavMenu}>
                                     <Link to='/marketPlace' style={{textDecoration: "none", color: "black"}}>
-                                        <Typography  textAlign="center">Market Place</Typography>
+                                        <Typography  textAlign="center">Аренда</Typography>
                                     </Link>
                                 </MenuItem>
                             {/*)}*/}
@@ -121,21 +121,21 @@ const NavBar = () => {
                                     </Link>
                                 </MenuItem>
                             {/*)}*/}
-                            {/*{ user && (*/}
+                            { user && (
                                 <MenuItem  key="favorite" onClick={handleCloseNavMenu}>
-                                    <Link to='/favorite' style={{textDecoration: "none", color: "black"}}>
-                                        <Typography  textAlign="center">Favorites</Typography>
+                                    <Link to='/chat' style={{textDecoration: "none", color: "black"}}>
+                                        <Typography  textAlign="center">Комментарии</Typography>
                                     </Link>
                                 </MenuItem>
-                            {/*)}*/}
+                            )}
 
-                            {/*{admin === user.email && (*/}
+                            { user && (
                                 <MenuItem  key="AddNft" onClick={handleCloseNavMenu}>
-                                    <Link to='/addNft' style={{textDecoration: "none", color: "black"}}>
-                                        <Typography  textAlign="center">Add nft</Typography>
+                                    <Link to='/myCar' style={{textDecoration: "none", color: "black"}}>
+                                        <Typography  textAlign="center">Мои автомобили</Typography>
                                     </Link>
                                 </MenuItem>
-                            {/*// )}*/}
+                            )}
                         </Menu>
                     </Box>
 
@@ -167,17 +167,6 @@ const NavBar = () => {
                                 </Button>
                             </NavLink>
                         {/*// )}*/}
-                        <NavLink to='/' style={{textDecoration:"none"}}>
-                            <Button
-                                style={{  boxShadow : 'none',
-                                    textTransform : 'none'}}
-                                key='blog'
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2,  display: 'block', color: 'rgb(29,86,171)'  }}
-                            >
-                                Условия
-                            </Button>
-                        </NavLink>
                         { user && (
                         <NavLink  to='/rent' style={{textDecoration:"none"}}>
                             <Button
@@ -301,6 +290,7 @@ const NavBar = () => {
                             {user && (
                                 <MenuItem><Link key='rel' to='/realtime' style={{textDecoration: "none", color: "black"}}>Чат</Link></MenuItem>
                             )}
+
 
                         </Menu>
                     </Box>
