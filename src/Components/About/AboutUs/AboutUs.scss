@@ -3,7 +3,7 @@
 
 /* generic */
 
-.about__frame{
+.about__frame {
   margin-top: 150px;
 }
 .is-animated {
@@ -27,8 +27,7 @@
   }
 }
 section {
-
-  &.is-grey{
+  &.is-grey {
     background: $lightgrey;
   }
 }
@@ -47,15 +46,13 @@ section {
 
 /* header */
 
-
-.menu__frame{
+.menu__frame {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding: 35px 40px 110px 40px;
 
-
-  &-link{
+  &-link {
     padding: 0px 15px;
     text-decoration: none;
 
@@ -64,7 +61,7 @@ section {
     }
   }
 
-  &-site{
+  &-site {
     margin-right: auto;
     text-decoration: none;
     font-weight: bold;
@@ -76,8 +73,8 @@ section {
     }
   }
 
-  &-button{
-    cursor:pointer;
+  &-button {
+    cursor: pointer;
     margin-top: -12px;
     margin-left: 25px;
     background: $white;
@@ -95,12 +92,11 @@ section {
   }
 }
 
-
 /* contact */
 
 .contacts__frame {
   padding-bottom: 100px;
-  @include breakpoint (medium) {
+  @include breakpoint(medium) {
     padding-bottom: 40px;
   }
 
@@ -108,10 +104,10 @@ section {
     color: $grey;
   }
 
-  h2{
+  h2 {
     padding-top: 80px;
     margin-bottom: 40px;
-    @include breakpoint (medium) {
+    @include breakpoint(medium) {
       padding-top: 40px;
       font-size: 24px;
       margin-top: 20px;
@@ -124,7 +120,7 @@ section {
     flex-wrap: nowrap;
     justify-content: center;
 
-    &-item{
+    &-item {
       margin: 0px 70px;
       width: 264px;
       min-width: 200px;
@@ -140,7 +136,7 @@ section {
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts__frame-wrapper-item{
+  .contacts__frame-wrapper-item {
     padding-top: 20px;
     margin: 0 auto;
     width: 264px;
@@ -148,12 +144,11 @@ section {
   }
 }
 
-
-.vertical_separator{
+.vertical_separator {
   width: 1px;
   min-width: 1px;
   height: 62px;
-  background: #C8C8CF;
+  background: #c8c8cf;
 }
 
 .contact_type {
@@ -162,31 +157,28 @@ section {
   line-height: 21px;
 }
 
-
 .contact_info {
   text-decoration: none;
   color: $black;
   font-size: 20px;
   margin-top: 6px;
   line-height: 29px;
-
 }
 
 /*about*/
 
-.about__frame{
-  @include breakpoint (medium) {
+.about__frame {
+  @include breakpoint(medium) {
     padding: 20px;
-
   }
-  &-text{
+  &-text {
     width: 925px;
     margin: 0 auto;
     font-size: 24px;
-    line-height:35.35px;
+    line-height: 35.35px;
   }
   @media screen and (max-width: 1199px) {
-    img{
+    img {
       width: calc(100% - 40px);
       margin: 0 auto;
     }
@@ -194,12 +186,11 @@ section {
 
   @media screen and (max-width: 1199px) {
     &-text {
-
       width: calc(100% - 60px);
       margin: 0 auto;
       font-size: 16px;
-      line-height:23px;
-      p{
+      line-height: 23px;
+      p {
         margin-top: 10px;
       }
     }
@@ -208,44 +199,43 @@ section {
 
 /*team*/
 
-.team__frame{
+.team__frame {
   max-width: 1100px;
   margin: 0 auto;
 
-  &-wrapper{
+  &-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 80px;
-    @include breakpoint (medium) {
+    @include breakpoint(medium) {
       justify-content: center;
       padding-bottom: 0px;
     }
 
-
-    &-item{
+    &-item {
       margin: 30px 40px;
-      @include breakpoint (medium) {
+      @include breakpoint(medium) {
         margin: 30px 20px;
       }
     }
 
-    &-name{
+    &-name {
       font-size: 20px;
       line-height: 29.46px;
       padding: 23px 0 8px 0;
       font-weight: 700;
-      @include breakpoint (medium) {
+      @include breakpoint(medium) {
         font-size: 16px;
         line-height: 23px;
       }
     }
 
-    &-job{
+    &-job {
       color: $blackgrey;
       font-size: 14px;
       line-height: 21px;
-      @include breakpoint (medium) {
+      @include breakpoint(medium) {
         font-size: 12px;
         line-height: 18px;
       }
@@ -255,21 +245,21 @@ section {
 
 /* footer */
 
-.footer__frame{
-  background:$purple;
+.footer__frame {
+  background: $purple;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding: 49px;
 
-  &-socials{
+  &-socials {
     font-size: 27px;
     line-height: 27px;
-    @include breakpoint (medium) {
+    @include breakpoint(medium) {
       margin-left: 0;
       padding-top: 16px;
     }
-    a{
+    a {
       padding: 0px 9px;
       color: $white;
 
@@ -279,13 +269,13 @@ section {
     }
   }
 
-  &-copy{
+  &-copy {
     margin-right: auto;
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
     color: rgb(255, 255, 255, 0.4);
-    @include breakpoint (medium) {
+    @include breakpoint(medium) {
       padding-top: 16px;
     }
   }
@@ -301,9 +291,8 @@ section {
   }
 }
 
-.mobile__burger{
+.mobile__burger {
   cursor: pointer;
-
 
   &-item {
     background: $black;
@@ -313,6 +302,5 @@ section {
     + div {
       margin-top: 3px;
     }
-
   }
 }

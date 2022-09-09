@@ -4,11 +4,9 @@
   align-items: center;
   height: 618px;
 
-
   h2 {
     font-weight: 500;
     margin: 110px 0 14px 0;
-
   }
   p {
     margin-top: 21px;
@@ -23,7 +21,7 @@
 
   &-line {
     width: 149px;
-    border-bottom: 1px dashed #9D9AAC;
+    border-bottom: 1px dashed #9d9aac;
     margin: 0px 1%;
   }
 
@@ -39,14 +37,13 @@
       justify-content: center;
       height: 108px;
       width: 108px;
-      background: #61A199;
+      background: #61a199;
       border-radius: 50%;
       font-size: 36px;
       color: white;
       div {
         margin-top: 5%;
       }
-
     }
     p {
       position: absolute;
@@ -58,9 +55,8 @@
   }
 }
 
-@media all and (max-width: 770px){
-
-  .profit{
+@media all and (max-width: 770px) {
+  .profit {
     display: none;
   }
 }

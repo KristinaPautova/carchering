@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
 
 .registration__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   &-step {
     color: #828282;
@@ -38,9 +37,8 @@
             position: absolute;
             padding-right: 15px;
             font-size: 24px;
-            color: #61A199;
+            color: #61a199;
             margin-right: 289px;
-
           }
         }
       }
@@ -53,7 +51,7 @@
   &-rect {
     height: 2px;
     width: 100%;
-    background: #DEE2E4;
+    background: #dee2e4;
     margin-top: 90px;
   }
   button {
@@ -66,19 +64,16 @@
     color: white;
     border: 0;
     cursor: pointer;
-
-
   }
 }
 
-.registration{
+.registration {
   margin-top: 70px;
   background-image: url("https://img1.goodfon.ru/original/2560x1707/9/7d/mashina-fon-minimalizm.jpg");
   background-size: cover;
 }
 
 .form > fieldset {
-
   border: 0;
   padding: 0;
 }
@@ -91,12 +86,11 @@ input::-webkit-inner-spin-button {
 }
 
 @media all and (max-width: 500px) {
-
-  .form-block > label{
+  .form-block > label {
     display: none;
   }
 
-  .registration__container > .form{
+  .registration__container > .form {
     width: 100%;
   }
 }

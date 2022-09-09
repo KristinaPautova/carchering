@@ -1,27 +1,25 @@
 /*variables */
 
-$black: #1B1B1B;;
+$black: #1b1b1b;
 $grey: #828282;
-$lightgrey: #F7F9FB;
-$blackgrey: #4F4F4F;
-$white: #FFFFFF;
-$purple: #3F3D56;
+$lightgrey: #f7f9fb;
+$blackgrey: #4f4f4f;
+$white: #ffffff;
+$purple: #3f3d56;
 
 /* mixsins */
 
-@mixin breakpoint($point){
+@mixin breakpoint($point) {
   @if $point == large {
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       @content;
     }
-  }
-  @else if $point == medium {
-    @media screen and (max-width: 1199px){
+  } @else if $point == medium {
+    @media screen and (max-width: 1199px) {
       @content;
     }
-  }
-  @else if $point == small {
-    @media screen and (max-width: 767px){
+  } @else if $point == small {
+    @media screen and (max-width: 767px) {
       @content;
     }
   }
@@ -33,7 +31,8 @@ $purple: #3F3D56;
   transition: all 400ms ease;
 }
 
-.question__frame,.asked_questions__frame{
+.question__frame,
+.asked_questions__frame {
   margin: 0 auto;
   text-align: center;
 }
@@ -60,81 +59,72 @@ $purple: #3F3D56;
   }
 }
 
-
-.question__frame{
+.question__frame {
   margin-top: 150px;
 }
 
-
-
-.content__container{
-
+.content__container {
   @media screen and (max-width: 1199px) {
-    .image{
+    .image {
       width: calc(100% - 40px);
       margin: 0 auto;
     }
   }
-
 }
-.question__frame-text{
+.question__frame-text {
   width: 632px;
   margin: 0 auto;
   font-size: 24px;
-  line-height:35.35px;
+  line-height: 35.35px;
 }
 @media screen and (max-width: 1199px) {
-  .question__frame-text{
-
+  .question__frame-text {
     width: calc(100% - 60px);
     margin: 0 auto;
     font-size: 16px;
-    line-height:23px;
-    p{
+    line-height: 23px;
+    p {
       margin-top: 10px;
     }
   }
 }
 
-.asked_questions__frame{
-
+.asked_questions__frame {
   margin: 50px 100px 58px 100px;
-  @include breakpoint (medium) {
+  @include breakpoint(medium) {
     margin: 0 auto;
   }
-  .team__frame-wrapper{
+  .team__frame-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 30px;
     flex-direction: column;
     align-items: stretch;
-    @include breakpoint (medium) {
+    @include breakpoint(medium) {
       justify-content: center;
       padding-bottom: 0px;
-
     }
 
-    &-item{
-
+    &-item {
       margin: 15px 0;
-      cursor:pointer;
+      cursor: pointer;
       font-size: 20px;
       line-height: 29px;
-      @include breakpoint (medium) {
+      @include breakpoint(medium) {
         width: calc(100% - 20px);
 
         font-size: 14px;
         line-height: 21px;
       }
 
-      button{
+      button {
         font-size: 20px;
         line-height: 29px;
         border: 1px none;
-        justify-content: space-between ;
+        justify-content: space-between;
         border-radius: 6px;
-        background: #F7F7F8;
+        background: #f7f7f8;
         width: 1026px;
         height: 66px;
         border: 0px;
@@ -142,20 +132,20 @@ $purple: #3F3D56;
         align-items: center;
         justify-content: space-between;
         padding: 0 28px 0 20px;
-        @include breakpoint (medium) {
+        @include breakpoint(medium) {
           height: 50px;
-          line-height:23px;
+          line-height: 23px;
           width: calc(100% - 20px);
         }
         &:hover {
-          background: rgba(97, 161, 153, 0.10);
+          background: rgba(97, 161, 153, 0.1);
         }
       }
 
-      &-answer{
+      &-answer {
         align-items: stretch;
         margin: -15px 0px;
-        cursor:pointer;
+        cursor: pointer;
         font-size: 20px;
         line-height: 29px;
         width: 784px;
@@ -163,8 +153,7 @@ $purple: #3F3D56;
         padding-right: 190px;
         text-align: left;
 
-
-        @include breakpoint (medium) {
+        @include breakpoint(medium) {
           font-size: 14px;
           line-height: 21px;
           text-align: center;
@@ -176,18 +165,17 @@ $purple: #3F3D56;
   }
 }
 
-.team__frame-wrapper-item{
+.team__frame-wrapper-item {
   &.is-active {
-    button{
+    button {
       background: rgba(97, 161, 153, 0.15);
-      color: #61A199;
+      color: #61a199;
     }
   }
 }
 
-.mobile__burger{
+.mobile__burger {
   cursor: pointer;
-
 
   &-item {
     background: $black;
@@ -197,18 +185,15 @@ $purple: #3F3D56;
     + div {
       margin-top: 3px;
     }
-
   }
 }
 
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root:hover{
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root:hover {
   background-color: rgba(97, 161, 153, 0.15) !important;
-  color: #61A199 !important;
-
+  color: #61a199 !important;
 }
 
- .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
-   background-color: rgba(97, 161, 153, 0.15) !important;
-   color: #61A199 !important;
- }
-
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  background-color: rgba(97, 161, 153, 0.15) !important;
+  color: #61a199 !important;
+}
